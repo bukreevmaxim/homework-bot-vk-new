@@ -145,6 +145,8 @@ def main():
                     logger.error(
                         f'Не удалось сообщить об ошибке в VK: {vk_error}'
                     )
+                else:
+                    last_error = message
 
         time.sleep(RETRY_PERIOD)
 
