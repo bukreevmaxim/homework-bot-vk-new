@@ -35,7 +35,8 @@ formatter = logging.Formatter(
 handler = RotatingFileHandler(
     'my_logger.log',
     maxBytes=50000000,
-    backupCount=5
+    backupCount=5,
+    encoding='utf-8'
 )
 handler.setFormatter(formatter)
 logger.addHandler(handler)
