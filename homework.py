@@ -1,12 +1,13 @@
-from dotenv import load_dotenv
-import os
-import vk_api
-import time
-import requests
-import random
 import logging
-from logging.handlers import RotatingFileHandler
+import os
+import random
 import sys
+import time
+from logging.handlers import RotatingFileHandler
+
+import requests
+import vk_api
+from dotenv import load_dotenv
 
 load_dotenv()
 RANDOM_ID = random.randint(0, 100000)
