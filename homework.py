@@ -3,16 +3,15 @@ import os
 import random
 import sys
 import time
+from http import HTTPStatus
 from logging.handlers import RotatingFileHandler
 
 import requests
 import vk_api
 from dotenv import load_dotenv
-from exceptions import (
-    MissingEnvironmentVariableError,
-    UnexpectedStatusCodeError,
-)
-from http import HTTPStatus
+
+from exceptions import (MissingEnvironmentVariableError,
+                        UnexpectedStatusCodeError)
 
 load_dotenv()
 RANDOM_ID = random.randint(0, 100000)
